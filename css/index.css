@@ -49,6 +49,10 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width:100%;
+    padding:0;
+    margin:0;
+    border:2px solid black; 
 }
 
 html, body {
@@ -66,11 +70,79 @@ p {
     line-height: 1.4;
 }
 
+nav {
+    display:flex;
+    width:800px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top:50px;
+}
+
+header nav{
+    margin-bottom:50px;
+}
+
+.links {
+    width:600px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+}
+
+nav a {
+    text-decoration:none;
+    color:black;
+
+}
+
+#main {
+    background-image:url('../img/jumbo.jpg');
+    height:30vh;
+    width:800px;
+    margin: 0 auto;
+    background-position:bottom;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#about {
+    width:800px;
+    padding-left: 30px;
+    border-bottom: 1px dashed black;
+    padding-bottom:10px;
+}
+
+.banner {
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+#mainabout {
+    background-image:url('../img/jumbo-about.png');
+    height:30vh;
+    width:800px;
+    margin: 0 auto;
+    background-position:bottom;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+    margin-top:50px;
 }
 
+.container.about-page {
+    display:flex;
+    flex-wrap:wrap;
+    width:800px;
+    justify-content:flex-start;
+    flex-flow:column;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -101,16 +173,58 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10 {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.box1 {
+    background:teal;
+}
+
+.box2{
+    background:gold;
+}
+
+.box3{
+    background:cadetblue;
+}
+
+.box4{
+    background:coral;
+}
+
+.box5{
+    background:crimson;
+}
+
+.box6{
+    background:forestgreen;
+}
+
+.box7{
+    background:darkorchid;
+}
+
+.box8{
+    background:hotpink;
+}
+
+.box9{
+    background:indigo;
+}
+
+.box10{
+    background:dodgerblue;
+}
+
+
 
 .bottom-content {
     display: flex;
@@ -127,15 +241,16 @@ p {
 }
 
 footer {
-    width: 100%;
+    width: 800px;
     background: black;
+    margin: 0 auto;
 }
 
 footer nav {
-    width: 60%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align:left;
     padding: 20px 2%;
     font-size: 14px;
 }
@@ -143,4 +258,37 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.row {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding-top:15px;
+    width:800px;
+    flex-wrap:wrap;
+    margin: 0 auto
+}
+
+.aboutelements {
+    width:40%;
+    border-bottom: 1px dashed black;
+    margin-bottom:15px;
+    padding-bottom:20px;
+}
+
+.aboutelements h2 {
+    margin-top:10px;
+}
+
+.bottompara {
+    width:800px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+button {
+    border-radius:4px;
+    padding:10px;
+    background:#fff;
 }
